@@ -1,0 +1,23 @@
+/** Divs for each icon**/
+
+#about{
+  color: white;
+}
+
+/** creating divs to set possitions for the icons**/
+
+div2 {         /**logo**/
+
+  position: absolute;
+  align-self: center;
+}
+div0{             /** about**/
+  position: relative;
+  top: 2000px;
+}
+div3{         /**resources**/
+  position: absolute;
+  top: 2000px
+
+
+}

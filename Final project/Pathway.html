@@ -1,0 +1,131 @@
+<!--                       PATHWAY PAGE                -->
+
+<!doctype html>
+ <html>
+ <head>
+  <title> Pathway to College </title>
+  <center><h1>Unitool</h1><center>
+  <meta name="viewpoint" content="width=device-width, initial-scale=1"> <!-- for the icons-->
+  <link href="FinalProject.css" rel="stylesheet" type="text/css">
+  <script src= "Submit.js"></script>
+  </head>
+  <div31 align="left">
+    <a href="homepage.html">
+    <img src="logoonereach2.png" width="300" height="300" onmouseover="this.src= 'logoonereach1.png';" onmouseout="this.src='logoonereach2.png';"/>
+    </a>
+  </div31>
+
+ <!--the buttons, hide/show feature-->
+<script>
+    function hideBtn(idOfBtn, sect) {
+       var submit = document.getElementById(idOfBtn);
+       submit.style.display = "none";
+       var q = document.getElementById(sect);
+       if(q.style.display = "none"){
+           q.style.display = "block";
+       }
+     }
+  </script>
+  <body>
+
+   <div class="container">   <!-- creating the boxes using container witch is ab element in div -->
+  <div class="main">
+    <div32>
+      <center><h2>Find the Path for You</h2><center>
+  </div32>
+
+  <div33>
+   <h3>Login Form</h3>
+  </div33>
+
+   <label> Name:</label>
+   <input type="text" user="fname" id="name"/>
+   <label>Last Name:</label>
+   <input type="text" name="lname" id="name"/>
+     <button id="beginSurv" onclick= "hideBtn('beginSurv','sect1');">submit</button>
+
+   </div>
+   </div>
+
+<!--                         PATHWAY WITH ICONS AND QUESTIONS                 -->
+
+    <h3 id="statement"> We want to suggest the best school for you, but first let's get to know you! </h3>
+  <!--  <div class="sections"> -->
+    <div id="sect1" style = "display: none;">
+      <p id="Q1">Do you want to stay close to home or go out and explore the world? </p>
+        <div4><img src="homewords.png" height="190" width="190" onclick = "this.src ='homeicon.png';"></div4>
+        <div5><img src="worldiconwords.png" height="190" width="190" onclick ="this.src='worldicon.png';"></div5>
+        <div>
+        <button id="submitQ1" onclick="hideBtn('submitQ1', 'sect2')" type="submit">submit</button>
+        </div>
+    </div>
+<!-- Linking icons and determining motions-->
+    <div id="sect2"  style = "display: none;">
+        <p id="Q2">What is your ideal college location?</p>
+        <div6><img src="smalltownwords.png" height="190" width="190" onclick = "this.src = 'smalltownicon.png';" /></div6>
+        <div7><img src="cityname.png" height="190" width="190" onclick= "this.src='cityicon.png';" /></div7>
+        <div23><img src="suburbwords.png" height="190" width="190" onclick= "this.src='suburbicon.png';" /></div23>
+          <div>
+            <button  id="submitQ2" onclick="hideBtn('submitQ2', 'sect3')" type="submit">submit</button>
+          </div>
+      </div>
+<!-- Linking icons and determining motions-->
+      <div id="sect3"  style = "display: none;">
+        <p id="Q3">Is prestige important to you?</p>
+           <div24><img src="yeswords.png" height="190" width="190" onclick= "this.src= 'yesicon.png';"/></div24>
+           <div9><img src="nowords.png" height="190" width="190" onclick=" this.src = 'noicon.png';"/></div9>
+          <div>
+            <button id="submitQ3" onclick="hideBtn('submitQ3', 'sect4')">submit</button>
+          </div>
+      </div>
+
+<!-- Linking icons and determining motions-->
+     <div id="sect4"  style = "display: none;">
+       <p id="Q4">What kind of grades do you have?</p>
+       <div10><img src="mostlyaswords.png" height="350" width="350" onclick=" this.src = 'goodicon.png';"/></div10>
+       <div11><img src="asandbswords.png" height="350" width="350" onclick=" this.src = 'goodicon.png';"/></div11>
+       <div12><img src="bswords.png" height="350" width="350" onclick=" this.src = 'goodicon.png';"/></div12>
+       <div13><img src="csandbelowwords.png" height="350" width="350" onclick=" this.src ='csandbelow.png'" onmouseover="'';"/></div12>
+        <div>
+          <button id="submitQ4" onclick="hideBtn('submitQ4', 'sect5')">submit</button>
+        </div>
+      </div>
+<!-- Linking icons and determining motions-->
+     <div id="sect5"  style = "display: none;">
+       <p id="Q5">What classroom are you looking for?</p>
+       <div14><img src="smallwords.png" height="350" width="350" onclick=" this.src = 'smallicon.png';" /></div15>
+       <div15><img src="mediumwordsicon.png" height="350" width="350" onclick=" this.src = 'mediumicon.png';"/></div15>
+       <div16><img src="largewords.png" height="350" width="350" onclick=" this.src = 'largeicon.png';"/></div16>
+        <div>
+          <button id="submitQ5" onclick="hideBtn('submitQ5', 'sect6')">submit</button>
+        </div>
+    </div>
+<!-- Linking icons and determining motions-->
+     <div id="sect6"  style = "display: none;">
+       <p id="Q6">What is your financial situation?</p>
+       <div17><img src="shmoneywordsicon.png" height="200" width="200" onclick=" this.src = 'shmoneyicon.png';"/></div17>
+       <div18><img src="scholarwords.png" height="200" width="200" onclick=" this.src = 'scholaricon.png';"/></div18><br>
+       <div><img src="budgetwords2.png" height="200" width="200" onclick=" this.src = 'moneybudgetnew.png';" /></div>
+
+        <div>
+          <button id="submitQ6" onclick="hideBtn('submitQ6', 'sect7')" >submit</button>
+        </div>
+    </div>
+<!-- Linking icons and determining motions-->
+     <div id="sect7" style = "display: none;">
+      <p id="Q7">What are college values that are important to you?</p>
+      <div19><img src="sistericonwords.png" height="200" width="200" onclick=" this.src = 'sistericon.png';"></div19>
+      <div20><img src="religionwordsicon.png" height="200" width="200" onclick=" this.src = 'religionicon.png';"/></div20>
+      <div21><img src="hbcuwords.png" height="200" width="200" onclick=" this.src = 'hbcuicon.png';"/></div21>
+      <div22><img src="brothericonwords.png" height="200" width="200" onclick=" this.src = 'brothericon.png';"></div21>
+        <br>
+      <a href="PickUni.html">
+          <button id="submitQ7">submit</button>
+      </a>
+        </div>
+     </div>
+<!-- foot print picture-->
+   <div23><img src="steps2.png" height="800" width="800"/></div23>
+
+   </body>
+   </html>
